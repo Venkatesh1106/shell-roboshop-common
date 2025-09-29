@@ -4,9 +4,13 @@ source ./common.sh
 app_name=shipping
 
 check_root
+echo "root check"
 app_setup
+echo "app steup check"
 java_setup
+echo "java setup check"
 systemd_setup
+echo "systemd setup check"
 
 dnf install mysql -y  &>>$LOG_FILE
 
